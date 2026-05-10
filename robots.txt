@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+Disallow: /api/
+
+Sitemap: https://spandiyar7.github.io/Ar-Ay/sitemap.xml
