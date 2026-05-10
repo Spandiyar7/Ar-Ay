@@ -71,20 +71,16 @@ export function AppointmentForm({ compact = false }: { compact?: boolean }) {
     setWhatsAppUrl(url);
 
     try {
-      const response = await fetch("/api/leads", {
+      await fetch("/api/leads", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(values)
       });
-
-      if (!response.ok) {
-        throw new Error("lead-submit-failed");
-      }
-
-      window.open(url, "_blank", "noopener,noreferrer");
     } catch {
-      setSubmitError(t("errors.submit"));
+      // Static hosting does not provide API routes; WhatsApp remains the fallback.
     }
+
+    window.open(url, "_blank", "noopener,noreferrer");
   };
 
   return (

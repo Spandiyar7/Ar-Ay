@@ -4,6 +4,8 @@ import { clinic } from "@/content/clinic";
 import { services } from "@/content/services";
 import { routing } from "@/i18n/routing";
 
+export const dynamic = "force-static";
+
 const staticPaths = [
   "",
   "/services",
