@@ -1,3 +1,4 @@
+import { assetPath } from "./assets";
 import type { FaqItem, Localized, ServiceCategory } from "./types";
 
 // TODO: verify Kazakh translation with native speaker before production launch.
@@ -139,7 +140,7 @@ export const services: Service[] = [
     currency: "KZT",
     duration: { ru: "обычно 40–90 минут", kk: "әдетте 40–90 минут" },
     doctorIds: ["therapist"],
-    image: "/images/clinic/clinic-interior.webp",
+    image: assetPath("/images/clinic/clinic-interior.webp"),
     faq: [
       {
         question: { ru: "Больно ли лечить кариес?", kk: "Кариес емдеу ауырта ма?" },
@@ -206,7 +207,7 @@ export const services: Service[] = [
     currency: "KZT",
     duration: { ru: "обычно 45–70 минут", kk: "әдетте 45–70 минут" },
     doctorIds: ["therapist"],
-    image: "/images/clinic/clinic-interior.webp",
+    image: assetPath("/images/clinic/clinic-interior.webp"),
     faq: [
       {
         question: { ru: "Как часто нужна чистка?", kk: "Тазалау қаншалықты жиі қажет?" },
@@ -266,7 +267,7 @@ export const services: Service[] = [
       kk: "жасына және міндетіне байланысты"
     },
     doctorIds: ["pediatric"],
-    image: "/images/clinic/family-dentistry.webp",
+    image: assetPath("/images/clinic/family-dentistry.webp"),
     faq: [
       {
         question: {
@@ -328,7 +329,7 @@ export const services: Service[] = [
     currency: "KZT",
     duration: { ru: "зависит от сложности", kk: "күрделілігіне байланысты" },
     doctorIds: ["surgeon"],
-    image: "/images/clinic/clinic-interior.webp",
+    image: assetPath("/images/clinic/clinic-interior.webp"),
     faq: [
       {
         question: {
@@ -390,7 +391,7 @@ export const services: Service[] = [
     currency: "KZT",
     duration: { ru: "обычно несколько визитов", kk: "әдетте бірнеше қабылдау" },
     doctorIds: ["orthopedist"],
-    image: "/images/clinic/clinic-interior.webp",
+    image: assetPath("/images/clinic/clinic-interior.webp"),
     faq: [
       {
         question: {
@@ -450,7 +451,7 @@ export const services: Service[] = [
     currency: "KZT",
     duration: { ru: "около 30–60 минут", kk: "шамамен 30–60 минут" },
     doctorIds: ["orthodontist"],
-    image: "/images/clinic/doctor-portrait.webp",
+    image: assetPath("/images/clinic/doctor-portrait.webp"),
     faq: [
       {
         question: {
@@ -513,7 +514,7 @@ export const services: Service[] = [
       kk: "жоспар диагностикадан кейін жасалады"
     },
     doctorIds: ["surgeon", "orthopedist"],
-    image: "/images/clinic/clinic-interior.webp",
+    image: assetPath("/images/clinic/clinic-interior.webp"),
     faq: [
       {
         question: {
@@ -573,7 +574,7 @@ export const services: Service[] = [
     currency: "KZT",
     duration: { ru: "около 20–40 минут", kk: "шамамен 20–40 минут" },
     doctorIds: ["therapist"],
-    image: "/images/clinic/doctor-portrait.webp",
+    image: assetPath("/images/clinic/doctor-portrait.webp"),
     faq: [
       {
         question: { ru: "Нужно ли делать снимок?", kk: "Түсірілім жасау қажет пе?" },

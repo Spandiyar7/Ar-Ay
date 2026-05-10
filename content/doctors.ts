@@ -1,3 +1,4 @@
+import { assetPath } from "./assets";
 import type { Localized } from "./types";
 
 // Placeholder team data. Replace with real doctors only after owner approval.
@@ -32,7 +33,7 @@ export const doctors: Doctor[] = [
       ru: ["Добавить подтвержденное образование", "Добавить актуальные сертификаты"],
       kk: ["Расталған білімін қосу", "Өзекті сертификаттарын қосу"]
     },
-    image: "/images/clinic/doctor-portrait.webp",
+    image: assetPath("/images/clinic/doctor-portrait.webp"),
     serviceSlugs: [
       "caries-treatment",
       "professional-cleaning",
@@ -64,7 +65,7 @@ export const doctors: Doctor[] = [
         "Балалар қабылдауы бойынша сертификаттарды қосу"
       ]
     },
-    image: "/images/clinic/family-dentistry.webp",
+    image: assetPath("/images/clinic/family-dentistry.webp"),
     serviceSlugs: ["pediatric-dentistry"],
     isPlaceholder: true
   },
@@ -89,7 +90,7 @@ export const doctors: Doctor[] = [
       ],
       kk: ["Бейінді білімін қосу", "Хирургиялық қабылдау бойынша құжаттарды қосу"]
     },
-    image: "/images/clinic/doctor-portrait.webp",
+    image: assetPath("/images/clinic/doctor-portrait.webp"),
     serviceSlugs: ["tooth-extraction", "implant-consultation"],
     isPlaceholder: true
   },
@@ -111,7 +112,7 @@ export const doctors: Doctor[] = [
       ru: ["Добавить образование", "Добавить сертификаты по протезированию"],
       kk: ["Білімін қосу", "Протездеу бойынша сертификаттарды қосу"]
     },
-    image: "/images/clinic/clinic-interior.webp",
+    image: assetPath("/images/clinic/clinic-interior.webp"),
     serviceSlugs: ["prosthetics-crowns", "implant-consultation"],
     isPlaceholder: true
   },
@@ -133,7 +134,7 @@ export const doctors: Doctor[] = [
       ru: ["Добавить образование", "Добавить сертификаты по ортодонтии"],
       kk: ["Білімін қосу", "Ортодонтия бойынша сертификаттарды қосу"]
     },
-    image: "/images/clinic/doctor-portrait.webp",
+    image: assetPath("/images/clinic/doctor-portrait.webp"),
     serviceSlugs: ["orthodontic-consultation"],
     isPlaceholder: true
   }

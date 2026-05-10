@@ -1,3 +1,4 @@
+import { assetPath } from "./assets";
 import type { Localized } from "./types";
 
 // Public profile data below is seed data from public listings and MUST be
@@ -59,11 +60,11 @@ export const clinic = {
   },
   images: {
     // Generated local photo assets. Replace with real clinic photos after owner approval.
-    hero: "/images/clinic/hero-consultation.webp",
-    clinicRoom: "/images/clinic/clinic-interior.webp",
-    doctor: "/images/clinic/doctor-portrait.webp",
-    family: "/images/clinic/family-dentistry.webp",
-    equipment: "/images/clinic/clinic-interior.webp"
+    hero: assetPath("/images/clinic/hero-consultation.webp"),
+    clinicRoom: assetPath("/images/clinic/clinic-interior.webp"),
+    doctor: assetPath("/images/clinic/doctor-portrait.webp"),
+    family: assetPath("/images/clinic/family-dentistry.webp"),
+    equipment: assetPath("/images/clinic/clinic-interior.webp")
   },
   social: {
     instagram: "",
